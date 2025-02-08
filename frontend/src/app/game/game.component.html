@@ -1,0 +1,29 @@
+<div class="container">
+    <h1>Matrix Game</h1>
+  
+    <div>
+      <label for="rows">Rows:</label>
+      <input type="number" id="rows" [(ngModel)]="rows" />
+    </div>
+    
+    <div>
+      <label for="cols">Columns:</label>
+      <input type="number" id="cols" [(ngModel)]="cols" />
+    </div>
+  
+    <button (click)="fetchMatrix()">Generate Matrix</button>
+  
+    <div *ngIf="matrix.length > 0">
+      <h2>Generated Matrix</h2>
+      <table border="1">
+        <tr *ngFor="let row of matrix">
+          <td *ngFor="let cell of row">
+            <div [ngClass]="cell.type">
+              <p>{{ cell.content || 'Empty' }}</p>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  
