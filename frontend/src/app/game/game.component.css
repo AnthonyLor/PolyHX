@@ -1,0 +1,29 @@
+.container {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  
+  td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .animal {
+    background-color: #f0e68c;
+  }
+  
+  .mineral {
+    background-color: #dcdcdc;
+  }
+  
+  .empty {
+    background-color: #ffffff;
+  }
+  
